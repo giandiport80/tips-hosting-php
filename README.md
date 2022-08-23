@@ -10,6 +10,8 @@ Jika tidak menggunakan git dan ssh client, lakukan langkah-langkah berikut:
 
 - pindahkan semua folder ke file manager cpanel
 - copy file .htaccess yang di folder /htaccess-laravel yang sudah disediakan di folder ini
+- tambahkan di baris terakhir di file .env `ASSET_URL=public` jika assets tidak terload
+
 
 #### membuat symbolic link
 
