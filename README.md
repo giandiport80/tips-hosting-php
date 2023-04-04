@@ -3,6 +3,7 @@
 ### 1. Project PHP Native
 
 - cukup pindahkan semua folder ke file manager cpanel
+- sesuaikan setting database (username, password, nama database)
 
 ### 2. Project Laravel
 
@@ -16,23 +17,24 @@ Jika tidak menggunakan git dan ssh client, lakukan langkah-langkah berikut:
 
 #### membuat symbolic link
 
+1. Akses melalui terminal, ketikkan `php artisan storage:link`
+
 1. dengan cara buat route untuk mengakses file ini
 
 ```php
-$target  = '/home/tutsmyid/project-laravel/storage/app/public';
-$link    = '/home/tutsmyid/public_html/storage';
+$target  = '/home/gian19/project-laravel/storage/app/public';
+$link    = '/home/gian19/public_html/storage';
 
 // atau
 
 $target = $_SERVER['DOCUMENT_ROOT']."/../laravel/storage";
 $link = $_SERVER['DOCUMENT_ROOT']."/storage";
 symlink($target, $link);
-
 ```
 
 - ket: path diatas adalah contoh
 
-2. akses melalui terminal
+2. akses melalui terminal (manual path) 
 
 - Masuk ke folder laravel kamu Sob dengan ketik command : cd <nama_project>
 - Kemudian masuk ke folder public dengan ketik command : cd public
